@@ -55,12 +55,26 @@ a {
 	line-height: 1.26;
 }
 
+.heading.lv3 {
+	color: #171100;
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 1.66; /* 166.667% */
+}
+
 .desc {
 	margin: 22px 0 38px 0;
 	color: #5f5b53;
 	font-size: 1.8rem;
 	font-weight: 400;
 	line-height: 1.66; /* 166.667% */
+}
+
+.line-clamp {
+	display: -webkit-box;
+	-webkit-line-clamp: var(--line-clamp, 1);
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
 
 /********************* HEADER ********************/
@@ -316,4 +330,88 @@ a {
 	background: var(--primary-color);
 	cursor: pointer;
 	transition: all 0.25s;
+}
+
+.popular .course-list {
+	margin-top: 33px;
+	display: flex;
+	gap: 30px;
+}
+
+.popular .course-item {
+	flex: 1;
+	border-radius: 12px;
+	background: #fff;
+	border: 1px solid #e2dfda;
+}
+
+.popular .course-item:hover {
+	box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+	border-color: transparent;
+	transition: all 0.25s;
+}
+
+.popular .course-item .thumb {
+	width: calc(100% + 2px);
+	height: 278px;
+	object-fit: cover;
+	border-radius: 12px 12px 0px 0px;
+	margin: -1px;
+}
+
+.popular .course-item .info {
+	padding: 16px 22px 22px;
+}
+
+.popular .course-item .head,
+.popular .course-item .rating {
+	display: flex;
+	align-items: center;
+}
+
+.popular .course-item .rating span {
+	margin-left: 4px;
+	color: #fea31b;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.75; /* 175% */
+}
+
+.popular .course-item .head {
+	justify-content: space-between;
+}
+
+.popular .course-item .heading {
+	padding-right: 6px;
+}
+
+.popular .course-item .caption {
+	margin-top: 6px;
+	color: #5f5b53;
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.85; /* 185.714% */
+}
+
+.popular .course-item .foot {
+	margin-top: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.popular .course-item .cost {
+	color: #171100;
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 1.66; /* 166.667% */
+}
+
+.popular .course-item .btn {
+	background: #171100;
+	padding: 17px 24px;
+}
+
+.popular .course-item .btn:hover {
+	background: var(--primary-color);
 }
