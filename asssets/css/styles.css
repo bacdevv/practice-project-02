@@ -427,22 +427,22 @@ a {
 	display: flex;
 }
 
-.feedback-list .info {
+.feedback-item .info {
 	width: 33%;
 }
 
-.feedback-list .content {
+.feedback-item .content {
 	width: 67%;
 }
 
-.feedback-list .avatar {
+.feedback-item .avatar {
 	width: 72px;
 	height: 72px;
 	object-fit: cover;
 	border-radius: 50%;
 }
 
-.feedback-list .title {
+.feedback-item .title {
 	margin-top: 18px;
 	color: #f7f7f7;
 	font-family: Sen;
@@ -451,7 +451,7 @@ a {
 	line-height: 1.41; /* 141.667% */
 }
 
-.feedback-list .bio {
+.feedback-item .bio {
 	margin-top: 4px;
 	color: #bfbcb2;
 	font-size: 1.4rem;
@@ -459,11 +459,11 @@ a {
 	line-height: 1.85; /* 185.714% */
 }
 
-.feedback-list .dots {
+.feedback-item .dots {
 	margin-top: 28px;
 }
 
-.feedback-list .dot {
+.feedback-item .dot {
 	margin-right: 6px;
 	width: 6px;
 	height: 6px;
@@ -472,15 +472,47 @@ a {
 	display: inline-block;
 }
 
-.feedback-list .dot.active {
+.feedback-item .dot.active {
 	background: #ffb900;
 }
 
-.feedback-list .content blockquote {
+.feedback-item .content blockquote {
 	margin-left: 30px;
 	color: #fff;
 	font-size: 2.6rem;
 	font-style: italic;
 	font-weight: 400;
 	line-height: 1.53; /* 153.846% */
+}
+
+/********************* FEATURES ********************/
+.features {
+	margin-top: 135px;
+	padding: 65px 0;
+}
+
+.features .body {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.features .images {
+	display: flex;
+	gap: 0 30px;
+}
+
+.features .images img {
+	width: 270px;
+	height: 404px;
+	border-radius: 16px;
+	object-fit: cover;
+}
+
+.features .images img.lower {
+	margin-top: 34px;
+}
+
+.features .content {
+	width: 41%;
 }
